@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header" style="display: flex">
+            <div>
+            <h1 style="margin-top: 2px;margin-bottom: 0px;margin-left: 10px;"><span style="font-family: Satisfy;font-size: 45px;color: blue">ScriBBler</span></h1>
+                <span style="font-family: 'Satisfy';margin-left: 10px"><b>Explore, Imagine, Create</b></span>
+            </div>
+            <div style="margin-right: 10px;margin-top: 10px">
+                <button id="signin" style=" background: blue;color: white;padding:8px">
+                   Sign In
+                </button>
+                <button id="signup"  style=" background: blue;color: white;padding:8px  ">
+                    Sign Up
+                </button>
+            </div>
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+
+        </div>
+           
+        <div class="postButtons"    >
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <button style="cursor: pointer;padding: 8px;background: #a6a618;font-weight: bolder;margin-right: 10px">
+                <a href="./html/bloglist.html" style="color: black;text-decoration: none;">All Posts</a>
+            </button>
+            <button id="post" style="padding: 8px;background: #a6a618;font-weight: bolder;">
+                Create Posts
+            </button>
+
+
+
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <h2 align="center">Get Started</h2>
+                <hr>
+                <p style="margin-bottom: 0px">
+                Full Name
+                </p>
+                <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="text" placeholder="Enter Full Name">
+                <p style="margin-bottom: 0px">
+                    Username
+                </p>
+                <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="text" placeholder="Enter Username">
+                <p style="margin-bottom: 0px">
+                    Password
+                </p>
+                <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="password" placeholder="Enter Password">
+                <p style="margin-bottom: 0px">
+                    Confirm Password
+                </p>
+                <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="password" placeholder="Confirm Your Password">
+                <p>
+                    <button style="background: limegreen;color: white;font-weight: bold;width: 382px;padding: 5px">Sign Up</button>
+                </p>
+            </form>
+        </div>
+        <!-- Insert code for Sign In modal here -->
+
+    </div>
+
+    <div>
+
+        <div id="inmyModal" class="modal">
+            <div class="modal-content">
+                <span class="iclose">&times;</span>
+                <form>
+                    <h2 align="center">Welcome back!</h2>
+                    <hr>
+                    <p style="margin-bottom: 0px">
+                        Username
+                    </p>
+                    <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="text" placeholder="Enter Username">
+                    <p style="margin-bottom: 0px">
+                        Password
+                    </p>
+                    <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="password" placeholder="Enter Passowrd">
+                    <p>
+                        <button style="background: limegreen;color: white;font-weight: bold;width: 382px;padding: 5px">Sign In</button>
+                    </p>
+                    <p align="center">
+                        Not a Member? <a id="signupi" style="color: blue;cursor: pointer">Sign up</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div >
+
+        <div id="postmyModal" class="modal" style="margin-top: -50px; padding: 80px;" >
+            <div class="modal-content">
+                <span class="pclose" style="margin-left: 1000px;">&times;</span>
+                <form>
+                    <h2 align="center" style="margin-top: 0px">Pen Your Post</h2>
+                    <p style="margin-bottom: 0px">
+                        Title
+                    </p>
+                    <input required="true" style="background: #f2eded; margin-left: 0px;width: 382px;margin-right: 5px" type="text" placeholder="Enter Title For the Blog">
+                    <p style="margin-bottom: 0px">
+                        Content
+                    </p>
+                    <textarea rows="10" cols="120" style="background-color: #f2eded;">
+
+                    </textarea>
+                    <p align="center" style="margin-bottom: 2px">
+                        <button style="background: limegreen;color: white;font-weight: bold;width: 382px;padding: 5px">Create</button>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
